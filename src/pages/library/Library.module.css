@@ -1,0 +1,26 @@
+
+
+.container{
+    max-width:95%;
+    margin:auto;
+    margin-top:8rem;
+}
+
+.playlistContainer{
+    display :grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:2rem;
+}
+
+/* For Mobile */
+@media screen and (max-width: 700px) {
+    .container {
+      max-width: 100%;
+      margin: 8rem 1rem;
+    }
+
+    .playlistContainer{
+        grid-template-columns: 1fr;
+        grid-gap:1rem;
+    }
+  }

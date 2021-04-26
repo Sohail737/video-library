@@ -1,0 +1,14 @@
+
+
+.container{
+    width:25rem;
+    margin:auto;
+    margin-top:8rem;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    padding:2rem 4rem;
+}
+
+.title{
+    margin:0;
+    margin-bottom:1rem;
+}

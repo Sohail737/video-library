@@ -1,0 +1,35 @@
+:root {
+    --primary-color: rgb(102, 51, 153);
+    --secondary-color: rgb(147, 197, 253);
+    --white: rgb(255, 255, 255);
+    --off-white:rgb(231, 226, 226);
+    --grey: rgb(175, 168, 168);
+    --light-grey: #ebebeb;
+    --black: rgb(0, 0, 0);
+    --red:rgb(253, 2, 2);
+  }
+
+  .search{
+    background-color: var(--off-white);
+    display: flex;
+    align-items: center;
+  }
+
+  .searchInput{
+    background-color: var(--off-white);
+    border:none;
+    width:15rem;
+    height: 2rem;
+  }
+
+  .searchIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .searchButton{
+      border:none;
+      background: transparent;
+      cursor: pointer;
+      padding:0.3rem;
+  }

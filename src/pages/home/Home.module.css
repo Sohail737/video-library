@@ -1,0 +1,23 @@
+:root {
+  --primary-color: rgb(102, 51, 153);
+  --secondary-color: rgb(147, 197, 253);
+  --white: rgb(255, 255, 255);
+  --grey: rgb(175, 168, 168);
+  --light-grey: #ebebeb;
+  --black: rgb(0, 0, 0);
+  --red: rgb(253, 2, 2);
+}
+
+.container {
+  max-width: 95%;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+/* For Mobile */
+@media screen and (max-width: 700px) {
+  .container {
+    max-width: 100%;
+    margin: 6rem 1rem;
+  }
+}
