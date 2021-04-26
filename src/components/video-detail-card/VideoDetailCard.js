@@ -55,6 +55,7 @@ export const VideoDetailCard = ({ video }) => {
         <ReactPlayer url={video.url} width="100%"/>
         <div
           role="heading"
+          aria-level=""
           className={styles.videoDetailCardHeading + " card-heading"}
         >
           {video.title}

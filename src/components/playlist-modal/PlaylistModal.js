@@ -37,13 +37,13 @@ export const PlaylistModal = ({ setOpenModal, incommingVideo }) => {
     setPlaylistName("");
   };
 
-  const checkIfVideoIsPresentInPlaylist = (videosInPlaylist, video) => {
-    return (
-      videosInPlaylist.filter(
-        (videoInPlaylist) => videoInPlaylist.id === video.id
-      ).length > 0
-    );
-  };
+  // const checkIfVideoIsPresentInPlaylist = (videosInPlaylist, video) => {
+  //   return (
+  //     videosInPlaylist.filter(
+  //       (videoInPlaylist) => videoInPlaylist.id === video.id
+  //     ).length > 0
+  //   );
+  // };
 
   const addVideoToPlaylist = (playlistName, video) => {
     console.log("video in add method on modal component", video);

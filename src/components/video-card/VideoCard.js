@@ -1,4 +1,3 @@
-import { Navigate } from "react-router";
 import styles from "./VideoCard.module.css";
 import {useNavigate} from "react-router-dom"
 
@@ -9,7 +8,7 @@ export const VideoCard = ({ video }) => {
       <div className={styles.cardImgHeight+" card-img"} >
         <img src={video.thumbnail} alt="" />
       </div>
-      <div role="heading" className={styles.videoCardHeading+" card-heading"}>
+      <div role="heading" aria-level="" className={styles.videoCardHeading+" card-heading"}>
         {video.title}
       </div>
       <div className={styles.videoCardContent+" card-content"}>

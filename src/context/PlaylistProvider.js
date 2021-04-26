@@ -54,7 +54,8 @@ const playlistReducer = (state, action) => {
 
     case "ADD_TO_LIKED":
       if (
-        state.likedVideos.length>0 && state.likedVideos.filter(
+        state.likedVideos.length > 0 &&
+        state.likedVideos.filter(
           (likedVideo) => likedVideo.id === action.payload.video.id
         ).length > 0
       ) {
@@ -71,17 +72,21 @@ const playlistReducer = (state, action) => {
         likedVideos: [...state.likedVideos, action.payload.video],
       };
 
+    default:
+      return state;
   }
 };
 
 export const PlaylistProvider = ({ children }) => {
-  const [{ playlists,likedVideos }, dispatchPlaylist] = useReducer(
+  const [{ playlists, likedVideos }, dispatchPlaylist] = useReducer(
     playlistReducer,
     initialPlaylistState
   );
 
   return (
-    <PlaylistContext.Provider value={{ playlists,likedVideos, dispatchPlaylist }}>
+    <PlaylistContext.Provider
+      value={{ playlists, likedVideos, dispatchPlaylist }}
+    >
       {children}
     </PlaylistContext.Provider>
   );

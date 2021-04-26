@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Nav.module.css";
 
-export const Nav = ({}) => {
+export const Nav = () => {
   return (
     <div className={styles.header}>
       <div className={styles.logo}>

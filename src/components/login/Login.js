@@ -20,6 +20,9 @@ const formFieldsReducer = (state, action) => {
 
     case "LOGIN_ERROR":
       return { ...state, loginError: action.payload.loginError };
+
+      default:
+        return state;
   }
 };
 

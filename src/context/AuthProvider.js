@@ -1,6 +1,4 @@
-import { Action } from "history";
 import React, { useContext, useEffect, useReducer } from "react";
-import { loginUserApi, signupUserApi } from "../fakeAuthApi";
 import { useNavigate } from "react-router-dom";
 
 const AuthContext = React.createContext();
@@ -34,6 +32,9 @@ const authReducer = (state, action) => {
 
     case "LOGOUT_USER":
       return { ...state, isUserLoggedIn: false };
+
+    default:
+      return state;
   }
 };
 
@@ -59,7 +60,6 @@ export const AuthProvider = ({ children }) => {
       });
     }
   }, []);
-
 
   const logoutUser = () => {
     dispatchAuth({ type: "CLEAR_CREDENTIALS" });

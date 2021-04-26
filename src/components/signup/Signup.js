@@ -25,6 +25,9 @@ const formFieldsReducer = (state, action) => {
 
     case "CNF_PASSWORD":
       return { ...state, cnfPassword: action.payload.cnfPassword };
+
+    default:
+      return state;
   }
 };
 

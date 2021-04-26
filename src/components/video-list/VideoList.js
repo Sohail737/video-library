@@ -1,6 +1,5 @@
 import styles from "./VideoList.module.css";
 import { VideoCard } from "../";
-import { useEffect, useState } from "react";
 import { videoListStore } from "../../videos/video";
 import { Search } from "../search/Search";
 import { useLocation } from "react-router-dom";

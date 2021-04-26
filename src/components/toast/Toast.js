@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import {useToast} from "../../context"
 
 export const Toast = ({ message,type,duration }) => {
-    const {showToast,toastMessage,toastType,dispatchToast}=useToast();
+    const {showToast,dispatchToast}=useToast();
     useEffect(()=>{
         const toastDuration=setTimeout(()=>dispatchToast({type:"TOGGLE_TOAST",payload:false}),duration)
 
