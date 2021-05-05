@@ -2,9 +2,9 @@ export const videoListStore = [
   {
     id: "1",
     thumbnail:
-      "https://i.ytimg.com/vi/Y-v3L62EP70/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHu37V0y_qw3XutJYha2oBynILxw",
+      "https://i.ytimg.com/vi/Ph1-R8BBwB8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDc_9lKL4iEPilKDG1EANe_4HftHg",
     title:
-      "Ingenuity Mars Helicopter Makes History As First Vehicle To Fly on Another Planet",
+      "What If You Traveled At The Speed of Light?",
     creator: "Riddle",
     dateUploadedOn: "21-04-2020",
     url: "https://www.youtube.com/watch?v=Y-v3L62EP70",
